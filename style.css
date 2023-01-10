@@ -1,0 +1,102 @@
+body {
+    background-color: rgba(43, 43, 43, 1);
+    color: rgb(244, 157, 26);
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    z-index:10;
+}
+
+nav li {
+    list-style: none;
+    background-color: rgba(255,204,0,255);
+    color: black;
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+nav a, nav a:visited {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0;
+    color: black;
+}
+nav a:hover nav a.active {
+    color: black;
+    background-color: rgb(225,159,21);
+}
+nav a:hover {
+    color:black;
+    background-color: rgb(225,159,21);
+}
+.dropdown-content {
+    position: absolute;
+    top: 37px;
+    width: 100%;
+    display: none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content ul {
+    flex-direction: column;
+}
+.h3 {
+    color: rgba(255,204,0,255);
+}
+
+
+
+
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 350px;
+    min-height: 230px;
+    border-bottom: 4px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 16px;
+    background-color: rgba(255,204,0,255);
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.picture-section {
+    height: 150px;
+    position: relative;
+}
+.picture {
+    width: 350px;
+    height: 150px;
+}
+.info {
+    padding: 8px;
+    color: #2D3748;
+}
+.listing {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.adress {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.type {
+    font-size: 12px;
+}
